@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins:wght@600&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="img">
+  <header>
+    <label  id="dark-change"></label>
+  </header>
+   <div class="nav">
+    <!-- <video src="video.mp4"></video> -->
+    <!-- <div class="nav">
+
+        <div class="title">Weather App <br> by Anant Saraswat</div>
+    </div> -->
+    <div class="left"><div class="name">Weather App</div>
+        <label for="cities">
+            <select title="Select a city" name="cityname" id="option">
+                <option class="btn-value"  value="Delhi" id="delhi">Delhi</option>
+                <option class="btn-value" value="USA" id="USA">United States</option>
+                <option class="btn-value" value="Canada" id="Canada">Canada</option>
+                <option class="btn-value" value="London" id="london">London</option>
+                <option class="btn-value" value="others">Others</option>
+            </select>
+          </label></div>
+    <div class="right">
+        <input type="text" class="search" placeholder="Search Weather" id="city">
+        <button class="btn" id="btn">Search</button>
+    </div>
+</div>
+<div class="heading">
+    <h1 class="main">Weather of <span id="cityname"></span></h1>
+</div>
+<div class="mainbox">
+    <div class="box">
+        <div class="boxheading">
+            <h4 class="weatherinfo">Temperature Info</h4>
+        </div>
+        <div class="content">
+            <div class="info">
+            <h1 class="boxh1"><span id="temp2">--</span><small>°C</small></h1>
+        </div>
+            <div class="boxcon">
+            <ul class="boxlist">
+              <li>Temperature is <span id="temp"></span></li>
+              <li>Min Temperature is <span id="min_temp"></span></li>
+              <li>Max Temperature is <span id="max_temp"></span></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="box"><div class="boxheading">
+        
+        <h4 class="Weatherinfo">Humidity Info</h4>
+    
+    </div>
+    <div class="info">
+    <h1 class="boxh1"><span id="humidity2">--</span><small>G.m-3</small></h1>
+</div>
+            <div class="boxcon">
+            <ul class="boxlist">
+              <li>Cloud PCT is <span id="cloud_pct"></span></li>
+              <li>Feels Like <span id="feels_like"></span></li>
+              <li>Humidity is <span id="humidity"></span></li>
+            </ul>
+        </div>
+</div>
+    <div class="box"><div class="boxheading">
+        
+        <h4 class="weatherinfo">Wind Info</h4>
+    
+    </div>
+    <div class="info">
+    <h1 class="boxh1"><span id="windspeed">--</span><small>Km/h</small></h1>
+</div>
+            <div class="boxcon">
+            <ul class="boxlist">
+                <li>Wind Speed is <span id="wind_speed"></span></li>
+                <li>Sunrise Time is <span id="sunrise"></span></li>
+                <li>Sunset Time is <span id="sunset"></span></li>
+            </ul>
+        </div>
+</div>
+</div>
+
+<div class="tableheading">
+    <h2 class="th">Weathers of other cities</h2>
+</div>
+<div class="table">
+    <table class="text-center">
+          <tr>
+            <th style="width: 12.5%;" class="text-start">Cities</th>
+            <th style="width: 12.5%;"class="text-start">Cloud PCT</th>
+            <th style="width: 12.5%;"class="text-start">Feels Like</th>
+           <th style="width: 12.5%;"class="text-start">Humidity</th>
+           <th style="width: 12.5%;"class="text-start">Wind Speed</th>
+            <th style="width: 12.5%;"class="text-start">Temp</th>
+            <th style="width: 12.5%;"class="text-start">Min temp</th>
+            <th style="width: 12.5%;"class="text-start">Max temp</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start" style="background-color: #30A2FF;">Mathura</th>
+            <td class="td"><span id="cloud_pct_mathura"></span></td>
+            <td class="td"><span id="feels_like_mathura"></span></td>
+            <td class="td"><span id="humidity_mathura"></span></td>
+            <td class="td"><span id="wind_speed_mathura"></span></td>
+            <td class="td"><span id="temp_mathura"></span></td>
+            <td class="td"><span id="min_temp_mathura"></span></td>
+            <td class="td"><span id="max_temp_mathura"></span></td>
+            
+               
+          </tr>
+          <tr>
+            <th scope="row" class="text-start" style="background-color: #30A2FF;" >Pune</th>
+            <td class="td"><span id="cloud_pct_pune"></span></td>
+            <td class="td"><span id="feels_like_pune"></span></td>
+            <td class="td"><span id="humidity_pune"></span></td>
+            <td class="td"><span id="wind_speed_pune"></span></td>
+            <td class="td"><span id="temp_pune"></span></td>
+            <td class="td"><span id="min_temp_pune"></span></td>
+            <td class="td"><span id="max_temp_pune"></span></td>
+           
+            
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start" style="background-color: #30A2FF;">Surat</th>
+            <td class="td"><span id="cloud_pct_surat"></span></td>
+            <td class="td"><span id="feels_like_surat"></span></td>
+            <td class="td"><span id="humidity_surat"></span></td>
+            <td class="td"><span id="wind_speed_surat"></span></td>
+            <td class="td"><span id="temp_surat"></span></td>
+            <td class="td"><span id="min_temp_surat"></span></td>
+            <td class="td"><span id="max_temp_surat"></span></td>
+           
+           
+          </tr>
+          <tr>
+            <th scope="row" class="text-start" style="background-color: #30A2FF;">Mumbai</th>
+            <td class="td"><span  id="cloud_pct_mumbai"></span></td>
+            <td class="td"><span id="feels_like_mumbai"></span></td>
+            <td class="td"><span id="humidity_mumbai"></span></td>
+            <td class="td"><span id="wind_speed_mumbai"></span></td>
+            <td class="td"><span id="temp_mumbai"></span></td>
+            <td class="td"><span id="min_temp_mumbai"></span></td>
+            <td class="td"><span id="max_temp_mumbai"></span></td>
+           
+               
+          </tr>
+         
+            
+        </tbody>
+      </table>
+</div>
+    <script src="script2.js"></script>
+</body>
+</html>
